@@ -4,6 +4,7 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  console.log('avbc')
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
